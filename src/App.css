@@ -45,3 +45,7 @@
   height: 100vh;
   padding-bottom: 2rem;
 }
+
+.MuiOutlinedInput-input .MuiInputBase-input .css-1x5jdmq {
+  color: black !important;
+}

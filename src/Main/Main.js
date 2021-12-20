@@ -24,12 +24,11 @@ const Main = ({ user, pinnedTodos, unpinnedTodos, reload }) => {
             role="tablist"
           >
             <li className="nav-item" role="presentation">
-              <a
+              <button
                 className={`nav-link ${active && "active"}`}
                 id="ex3-tab-1"
                 data-mdb-toggle="tab"
                 role="tab"
-                href="#"
                 aria-controls="tab-1"
                 aria-selected="true"
                 onClick={() => {
@@ -38,15 +37,14 @@ const Main = ({ user, pinnedTodos, unpinnedTodos, reload }) => {
                 }}
               >
                 My Todos
-              </a>
+              </button>
             </li>
             <li className="nav-item" role="presentation">
-              <a
+              <button
                 className={`nav-link ${!active && "active"}`}
                 id="ex3-tab-2"
                 data-mdb-toggle="tab"
                 role="tab"
-                href="#"
                 aria-controls="tab-2"
                 aria-selected="false"
                 onClick={() => {
@@ -55,7 +53,7 @@ const Main = ({ user, pinnedTodos, unpinnedTodos, reload }) => {
                 }}
               >
                 Pinned Todos
-              </a>
+              </button>
             </li>
           </ul>
 

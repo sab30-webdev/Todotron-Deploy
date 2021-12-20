@@ -69,36 +69,38 @@ const TodoCard = ({
   const month = date.toDate().toDateString().split(" ")[1];
   return (
     <div className="card shadow mb-1 bg-white rounded" id="card">
-      <div className="card-body " id="insidecard">
+      <div className="card-body ">
         {type === "text" && todo}
         {type === "audio" && (
           <audio className="audio" controls style={{ outline: "none" }}>
             <source src={todo} type="audio/mp3" />
           </audio>
         )}
-        <FlagIcon style={{ fill: `${flagColor[priority]}` }} />
-        <Chip label={`${day} ${month}`} variant="outlined" />
-        {pin ? (
-          <IconButton aria-label="pin" onClick={handlePin}>
-            <PinIcon style={{ fill: "rgb(38, 166, 154)" }} />
+        <div className="iconSet">
+          <FlagIcon style={{ fill: `${flagColor[priority]}` }} />
+          <Chip label={`${day} ${month}`} variant="outlined" />
+          {pin ? (
+            <IconButton aria-label="pin" onClick={handlePin}>
+              <PinIcon style={{ fill: "rgb(38, 166, 154)" }} />
+            </IconButton>
+          ) : (
+            <img
+              src={unpinicon}
+              className="unpin"
+              id="icons"
+              alt="pin"
+              onClick={handlePin}
+            />
+          )}
+
+          <IconButton aria-label="edit" onClick={handleShow}>
+            <EditIcon style={{ fill: "rgb(104, 159, 56)" }} />
           </IconButton>
-        ) : (
-          <img
-            src={unpinicon}
-            className="unpin"
-            id="icons"
-            alt="pin"
-            onClick={handlePin}
-          />
-        )}
 
-        <IconButton aria-label="edit" onClick={handleShow}>
-          <EditIcon style={{ fill: "rgb(104, 159, 56)" }} />
-        </IconButton>
-
-        <IconButton aria-label="delete" onClick={handleDelete}>
-          <DeleteIcon style={{ fill: "rgb(213, 0, 0)" }} />
-        </IconButton>
+          <IconButton aria-label="delete" onClick={handleDelete}>
+            <DeleteIcon style={{ fill: "rgb(213, 0, 0)" }} />
+          </IconButton>
+        </div>
       </div>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>

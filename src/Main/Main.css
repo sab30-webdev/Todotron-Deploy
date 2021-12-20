@@ -134,7 +134,7 @@ audio-react-recorder {
   margin: 5% 0% 0% 5%;
   grid-template-rows: auto auto;
   row-gap: 20px;
-  width: 35%;
+  width: 45vw;
 }
 #ip1 {
   width: 80%;

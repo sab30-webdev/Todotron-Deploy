@@ -27,6 +27,11 @@ const LeftMain = ({ user, todos, reload }) => {
     );
   }, [segment, segment && segment.words.length]); // eslint-disable-line
 
+  useEffect(() => {
+    reload();
+    console.log("jew");
+  }, [isRecording]); // eslint-disable-line
+
   const handleSubmit = (e) => {
     function update() {
       const data = {
@@ -54,6 +59,7 @@ const LeftMain = ({ user, todos, reload }) => {
   };
 
   const onUpload = async (file) => {
+    console.log("upload");
     const fname = `audio_${Date.now()}.mp3`;
     try {
       const snap = await storage.ref("audio").child(fname).put(file.blob);
@@ -107,7 +113,6 @@ const LeftMain = ({ user, todos, reload }) => {
               onStop={onUpload}
               mimeType="audio/mp3"
             />
-
             <Button
               variant="outlined"
               startIcon={<MicIcon />}

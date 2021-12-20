@@ -3,22 +3,21 @@ import AdapterDateFns from "@mui/lab/AdapterDateFns";
 import LocalizationProvider from "@mui/lab/LocalizationProvider";
 import MobileDatePicker from "@mui/lab/MobileDatePicker";
 
-
 const DatePicker = ({ date, setDate, setNewDate, edit }) => {
-  
   const handleDateChange = (newVal) => {
     if (edit) {
       setNewDate(newVal);
     } else {
       setDate(newVal);
     }
-    
   };
 
   return (
-    <LocalizationProvider dateAdapter={AdapterDateFns}>
+    <LocalizationProvider
+      dateAdapter={AdapterDateFns}
+      style={{ color: "black" }}
+    >
       <MobileDatePicker
-      
         label="Schedule"
         inputFormat="dd/MM/yyyy"
         value={date}
