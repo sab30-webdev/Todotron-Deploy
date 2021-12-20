@@ -1,0 +1,184 @@
+.web-view {
+  display: flex !important;
+}
+audio-react-recorder {
+  display: none;
+}
+.add_task {
+  display: flex;
+}
+
+.add_task > input {
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 400px) {
+  div.mobile-view {
+    padding: 0%;
+    padding-top: 0%;
+    height: 100vh;
+  }
+  button.tabs {
+    padding-left: -10% !important;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .left-main {
+    padding: 3%;
+    display: grid;
+    grid-template-rows: auto auto;
+    row-gap: 15px;
+    width: 90% !important;
+    margin: 5% 5% 0% 5% !important;
+  }
+  .mytodo1 {
+    color: blue !important;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .input-div {
+    display: grid;
+    grid-template-columns: 90% 20%;
+    column-gap: 5px;
+    grid-template-rows: auto auto;
+    row-gap: 10px;
+    width: 85vw;
+  }
+
+  .rightmain {
+    padding: 15px;
+    width: 100% !important;
+    margin: 0% !important;
+  }
+  #heading1 {
+    text-align: center;
+    color: #6459d9;
+    width: 85vw;
+  }
+
+  .search-div {
+    width: 85vw;
+  }
+  #ip2 {
+    width: 85vw !important;
+  }
+  #insidecard {
+    display: grid;
+    grid-template-columns: 30% auto auto auto auto auto !important;
+    background-color: white;
+  }
+  #card {
+    width: 85vw !important;
+  }
+  .rightmain .todos-div #card {
+    width: 100% !important;
+  }
+  p.date {
+    display: none;
+  }
+  h2.username {
+    display: none;
+  }
+  #wtext2 {
+    text-align: center;
+  }
+  #but {
+    margin-left: 29% !important;
+  }
+  .signin-button {
+    display: grid;
+    grid-template-rows: 20% 5% 20% !important;
+    background: hsl(204 100% 5%);
+    place-content: center;
+    height: 100vh;
+  }
+  .page1text {
+    display: grid;
+    grid-template-rows: 30% 30% 30%;
+    row-gap: 6vh;
+    position: absolute;
+    margin-top: -40vh;
+  }
+  .voice {
+    width: 45vw !important;
+  }
+}
+
+.unpin {
+  margin-top: 8px;
+  cursor: pointer;
+}
+#icons {
+  display: flex;
+  float: right;
+}
+#heading1 {
+  color: #6459d9;
+}
+.left-main {
+  width: 45vw !important;
+  margin: 5% 0% 0% 5%;
+}
+.input-div {
+  display: grid;
+  grid-template-columns: auto;
+  column-gap: 20px;
+  grid-template-rows: auto auto;
+  row-gap: 10px;
+}
+.input {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  row-gap: 20px;
+}
+.rightmain {
+  margin: 5% 0% 0% 5%;
+  grid-template-rows: auto auto;
+  row-gap: 20px;
+  width: 35%;
+}
+#ip1 {
+  width: 80%;
+}
+#ip2 {
+  width: 80%;
+}
+.voice {
+  width: 15vw;
+}
+#card {
+  width: 90%;
+}
+
+.edit {
+  width: 22px;
+  filter: opacity(50%);
+}
+
+#insidecard {
+  display: grid;
+  grid-template-columns: 50% auto auto auto auto auto;
+  background-color: white;
+}
+
+.schedprior {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  column-gap: 10%;
+}
+.search-div {
+  display: grid;
+  grid-template-rows: auto auto;
+  row-gap: 15px;
+}
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+  color: white !important;
+  opacity: 0.8;
+}
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+  border-color: white !important;
+  opacity: 0.7;
+}
+.css-1kty9di-MuiFormLabel-root-MuiInputLabel-root {
+  color: white !important;
+  opacity: 0.6;
+}

@@ -1,0 +1,47 @@
+.App-Bar {
+  display: flex;
+  min-height: 100vh;
+  background-color: #0a1929;
+}
+
+.signin-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+#wtext {
+  background: linear-gradient(to right, hsl(98 100% 62%), hsl(204 100% 59%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-size: 350%;
+}
+.signin-button {
+  display: grid;
+  grid-template-rows: 40% 5% 30%;
+  background: hsl(204 100% 5%);
+  place-content: center;
+  height: 100vh;
+}
+#but {
+  margin-left: 35%;
+}
+#wtext2 {
+  background: linear-gradient(to right, hsl(204 100% 59%), hsl(98 100% 62%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.App {
+  background-image: url("./hs-bg.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: saturation;
+  background-blend-mode: multiply;
+  overflow: auto;
+  height: 100vh;
+  padding-bottom: 2rem;
+}
