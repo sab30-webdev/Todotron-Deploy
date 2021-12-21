@@ -20,6 +20,9 @@
   opacity: 0.6;
 }
 
-/* .iconSet {
+.iconSet {
   display: flex;
-} */
+  justify-content: space-between;
+  margin-top: 10px;
+  align-items: center;
+}
